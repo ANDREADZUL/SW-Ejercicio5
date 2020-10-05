@@ -8,16 +8,30 @@
      Descripción del programa: Hacer un arreglo que contenga 10 números y el cual
      el resultado sea par o impar)
      */  
-     var miarray = [5, 3, 4, 2, 0, 6, 9, 8, 7, 1]; //10 números aleatorios de la posicion 0 al 9
+     var miarray = []; //10 números aleatorios de la posicion 0 al 9
+     var par = 0;
+     var impar = 0;
 
      //función de Si y no
-     if(miarray[1]%2==0){
-         alert("este número es par");
-     }else {
-        alert("este número es impar");
+     for(var a = 0;a<10;a++){
+        miarray[a] = Math.round(Math.random()*100);
+        alert("Números aleatorios: " +miarray[a]);
+        
+        if(miarray[a]%2==0){
+            par++;
+         alert("este número es par: " +par);
+         }
+         else {
+         impar++;
+        alert("este número es impar: " +impar);
+        }
+     
      }
+     
+
 
     </script>
+
 </head>
 <body></body>
 </html>
